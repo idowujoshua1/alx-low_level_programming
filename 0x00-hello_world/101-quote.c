@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - prints eactly "and that piece of art is useful"
  * Return: 1(Success)
