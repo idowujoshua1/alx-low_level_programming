@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel "$input_file" -o "$output_file"
+gcc -S -masm=intel $CFILE > $CFILE.s
