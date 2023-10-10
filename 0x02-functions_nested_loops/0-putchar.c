@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - Custom _putchar function
  * This function takes a character as input and prints it to standard output.
@@ -6,16 +6,14 @@
  */
 int main(void)
 {
-	/**
-	 * Call the custom putchar function
-	 */
-	_putchar("_\n");
-	_putchar("p\n");
-	_putchar("u\n");
-	_putchar("t\n");
-	_putchar("c\n");
-	_putchar("h\n");
-	_putchar("a\n");
-	_putchar("r\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
