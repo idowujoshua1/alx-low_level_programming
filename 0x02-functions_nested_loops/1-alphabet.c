@@ -1,17 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * printAlphabet - prints alphabet from a to z
+ * print_Alphabet - prints alphabet from a to z
  */
-void printAlphabet(void)
+void print_Alphabet(void)
 {
 	char letter = 'a';
 
 	while (letter <= 'z')
 	{
-	putchar(letter);
-	letter++;
+		_putchar(letter);
+		letter++;
 	}
-	putchar('\n');
-	}
-	printAlphabet();
+	_putchar('\n');
 }
