@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_Alphabet - prints alphabet from a to z
+ * print_alphabet - prints alphabet from a to z
  */
-void print_Alphabet(void)
+void print_alphabet(void)
 {
 	int i;
 
