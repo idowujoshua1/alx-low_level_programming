@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_triangle - prints a triangle
- * Description: Prints Diagonals
+ * print_triangle - entry point
+ * Description:i Prints Diagonals
  * @size: size of the triangle
  * Return: void
  */
@@ -26,6 +26,7 @@ void print_triangle(int size)
 			{
 				_putchar('#');
 			}
+			_putchar('\n');
 		}
 	}
 }
