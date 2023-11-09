@@ -7,7 +7,6 @@
  * @argv: Argument of number of bytes to print
  *
  * Return: 0 on success
- * 
  */
 
 int main(int argc, char *argv[])
