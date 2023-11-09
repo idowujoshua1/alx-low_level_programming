@@ -1,6 +1,6 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include "3-calc.h"
-#include <stdlib.h>
 
 /**
 * main - Entry point
@@ -8,10 +8,11 @@
 * @argv: argument vector
 * Return: always 0
 */
+
 int main(int argc, char *argv[])
 {
 	int num1, num2;
-	char *op;
+	int (*func_ptr)(int, int);
 
 	if (argc != 4)
 	{
@@ -20,22 +21,22 @@ int main(int argc, char *argv[])
 	}
 
 	num1 = atoi(argv[1]);
-	op = argv[2];
+	func_ptr = get_op_func(argv[2]);
 	num2 = atoi(argv[3]);
 
-	if (get_op_func(op) == NULL)
+	if (func_ptr == NULL || (argv[2][1] != '\0'))
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((*op == '/' && num2 == 0) ||
-		(*op == '%' && num2 == 0))
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && argv[3][0] == '0')
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	printf("%d\n", get_op_func(op)(num1, num2));
+	printf("%d\n", func_ptr(num1, num2));
+
 	return (0);
 }
