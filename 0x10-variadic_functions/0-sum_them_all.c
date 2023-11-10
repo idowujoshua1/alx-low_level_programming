@@ -7,22 +7,18 @@
 * @n: number of argument to sum
 * Return: the sum
 */
+
 int sum_them_all(const unsigned int n, ...)
 {
-	unsigned int i;
-	int sum = 0;
-	va_list ap;
+	va_list args;
+	unsigned int count, result = 0;
 
-	if (n == 0)
-		return (0);
-
-	va_start(ap, n);
-
-	for (i = 0; i < n; i++)
+	va_start(args, n);
+	for (count = 0; count < n; count++)
 	{
-		sum += va_arg(ap, int);
+		result += va_arg(args, int);
 	}
-	va_end(ap);
 
-	return (sum);
+	va_end(args);
+	return (result);
 }
