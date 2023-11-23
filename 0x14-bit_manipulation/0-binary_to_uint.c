@@ -9,10 +9,11 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int result = 0;
+	size_t i;
 
 	if (!b)
 	return (0);
-	for (size_t i = 0; b[i] != '\0'; ++i)
+	for (i = 0; b[i] != '\0'; ++i)
 	{
 	char digit = b[i];
 
