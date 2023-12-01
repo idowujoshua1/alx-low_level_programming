@@ -31,7 +31,7 @@ void close_error(int fd)
 }
 
 /**
-  * main - a program that copies the content of a file to another file.
+  * main - copies the content of a file to another file.
   * @argc: Number of arguments received
   * @argv: Array of arguments received
   *
